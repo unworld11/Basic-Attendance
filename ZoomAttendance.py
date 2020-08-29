@@ -16,7 +16,7 @@ for j in range(students):
         Column[j].append("Absent")
 
 
-with open("Record.csv",'w',newline='') as file:
+with open("Record.csv",'w+',newline='') as file:
     z=csv.writer(file)
     z.writerow(Headers)
     z.writerows(Column)
